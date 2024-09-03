@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>En formular</title>
+</head>
+
+<body>
+    <form>
+        <h1>Køb bog</h1>
+        <div class="flex flex-row">
+            <div>
+                <label for="antal">Antal</label>
+                <input type="number" id="antal" name="antal" placeholder="1">
+            </div>
+            <div>
+                <span>Levering:</span>
+                <input type="radio" id="postnord" name="levering" value="postnord">
+                <label for="postnord" checked="checked">PostNord</label>
+                <input type="radio" id="postnord" name="levering" value="postnord">
+                <label for="afhentselv">Afhent Selv</label>
+            </div>
+            <div>
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" name="navn" value="Anders And">
+            </div>
+            <div>
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse" value="Pradisæblevej 8">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" value="anders@andeby.dk">
+            </div>
+            <div>
+                <label for="postnummer&by">Postnummer & by:</label>
+                <input type="text" id="postnummer&by" name="postnr&by" value="0900">
+                <select id="by" name="by">
+                    <option AndebyA="Andeby A">Andeby A</option>
+                    <option Andeby B="Andeby B">Andeby B</option>
+                    <option Andeby C="Andeby C">Andeby C</option>
+                    <option Andeby D="Andeby D">Andeby D</option>
+                </select>
+            </div>
+            <div>
+                <label for="telefon">Telefon:</label>
+                <input type="number" id="telefon" name="telefon" value="555-555">
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="betalning">Ja tak til nyhedsbrev og tilbud</label>
+            </div>
+            <div>
+                <input type="submit" value="Til betaling">
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>

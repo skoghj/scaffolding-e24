@@ -6,6 +6,7 @@ import Link from "../components/Link.astro";
 
 <MainLayout title="Titel">
   <article>
+    <!--
     <h1>Index overskrift</h1>
     <div class="pb-4">
       <Button variant="primary" size="small">Knaptekst </Button>
@@ -18,58 +19,76 @@ import Link from "../components/Link.astro";
     </div>
     <Button variant="primary" size="medium">Knaptekst</Button>
   </article>
+ -->
 
-  <p class="p-20">Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
+    <div class="flex flex-col items-center justify-center gap-10">
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="textlink" size="standard">En anden side</Link></p>
 
-  <form class="grid grid-cols-1 gap-6 mx-auto mt-8 max-w-md">
-    <h1 class="text-xl font-bold text-center p-4">Køb bog</h1>
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="primary" size="small">En anden side</Link></p>
 
-    <div class="flex flex-col text-slate-800">
-      <label for="antal" class="pr-2 pb-1">Antal:</label>
-      <input type="number" id="antal" name="antal" placeholder="1" class="pointer-events-auto bg-slate-200/50 rounded-md border-none w-auto" />
-    </div>
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="primary" size="medium">En anden side</Link></p>
 
-    <div class="flex flex-row gap-2 border-b2 justify-between items-center w-80">
-      <span class="text-slate-800">Levering:</span>
-      <input type="radio" id="postnord" name="levering" value="postnord" checked />
-      <label for="postnord" class="text-slate-600">PostNord</label>
-      <input type="radio" id="postnord" name="levering" value="postnord" />
-      <label for="afhentselv" class="text-slate-600">Afhent Selv</label>
-    </div>
-    <div class="flex flex-col border-b2">
-      <label for="navn" class="pr-1 pb-1">Navn:</label>
-      <input type="text" id="navn" name="navn" value="Anders And" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
-    </div>
-    <div class="flex flex-col">
-      <label for="adresse" class="pb-1">Adresse:</label>
-      <input type="text" id="adresse" name="adresse" value="Pradisæblevej 8" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
-    </div>
-    <div class="flex flex-col">
-      <label for="email" class="pb-1">E-mail:</label>
-      <input type="text" id="email" name="email" value="anders@andeby.dk" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
-    </div>
-    <div class="flex flex-col gap-2">
-      <label for="postnummer&by" class="pb-1">Postnummer & by:</label>
-      <input type="text" id="postnummer&by" name="postnr&by" value="0900" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
-      <select id="by" name="by" class="w-1/2 bg-slate-200/50 text-slate-600 rounded-md border-none">
-        <option value="Andeby A">Andeby A</option>
-        <option value="Andeby B">Andeby B</option>
-        <option value="Andeby C">Andeby C</option>
-        <option value="Andeby D">Andeby D</option>
-      </select>
-    </div>
-    <div class="flex flex-col">
-      <label for="telefon" class="pb-1">Telefon:</label>
-      <input type="text" id="telefon" name="telefon" value="555-555" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
-    </div>
-    <div class="pb-2">
-      <input type="checkbox" />
-      <label for="betalning" class="text-slate-600">Ja tak til nyhedsbrev og tilbud</label>
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="primary" size="large">En anden side</Link></p>
+
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="secondary" size="small">En anden side</Link></p>
+
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="secondary" size="medium">En anden side</Link></p>
+
+      <p>Link til <Link href="https://www.kea.dk" target="_blank" variant="secondary" size="large">En anden side</Link></p>
+
+      <div class="py-10"><Button variant="secondary" size="small">Det er et knap</Button></div>
     </div>
 
-    <div class="flex gap-4 items-center justify-center">
-      <Button variant="secondary" size="small">Kurv </Button>
-      <Button variant="primary" size="large">Til betaling </Button>
-    </div>
-  </form>
+    <form class="grid grid-cols-1 gap-6 mx-auto mt-8 max-w-md">
+      <h1 class="text-3xl font-bold text-center p-4">Køb bog</h1>
+
+      <div class="flex flex-col text-slate-800">
+        <label for="antal" class="pr-2 pb-1">Antal:</label>
+        <input type="number" id="antal" name="antal" placeholder="1" class="pointer-events-auto bg-slate-200/50 rounded-md border-none w-auto" />
+      </div>
+
+      <div class="flex flex-row gap-2 border-b2 justify-between items-center w-80">
+        <span class="text-slate-800">Levering:</span>
+        <input type="radio" id="postnord" name="levering" value="postnord" checked />
+        <label for="postnord" class="text-slate-600">PostNord</label>
+        <input type="radio" id="postnord" name="levering" value="postnord" />
+        <label for="afhentselv" class="text-slate-600">Afhent Selv</label>
+      </div>
+      <div class="flex flex-col border-b2">
+        <label for="navn" class="pr-1 pb-1">Navn:</label>
+        <input type="text" id="navn" name="navn" value="Anders And" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
+      </div>
+      <div class="flex flex-col">
+        <label for="adresse" class="pb-1">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" value="Pradisæblevej 8" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
+      </div>
+      <div class="flex flex-col">
+        <label for="email" class="pb-1">E-mail:</label>
+        <input type="text" id="email" name="email" value="anders@andeby.dk" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
+      </div>
+      <div class="flex flex-col gap-2">
+        <label for="postnummer&by" class="pb-1">Postnummer & by:</label>
+        <input type="text" id="postnummer&by" name="postnr&by" value="0900" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
+        <select id="by" name="by" class="w-1/2 bg-slate-200/50 text-slate-600 rounded-md border-none">
+          <option value="Andeby A">Andeby A</option>
+          <option value="Andeby B">Andeby B</option>
+          <option value="Andeby C">Andeby C</option>
+          <option value="Andeby D">Andeby D</option>
+        </select>
+      </div>
+      <div class="flex flex-col">
+        <label for="telefon" class="pb-1">Telefon:</label>
+        <input type="text" id="telefon" name="telefon" value="555-555" class="w-auto bg-slate-200/50 text-slate-600 rounded-md border-none" />
+      </div>
+      <div class="pb-2">
+        <input type="checkbox" />
+        <label for="betalning" class="text-slate-600">Ja tak til nyhedsbrev og tilbud</label>
+      </div>
+
+      <div class="flex gap-4 items-center justify-center">
+        <Button variant="secondary" size="small">Kurv </Button>
+        <Button variant="primary" size="large">Til betaling </Button>
+      </div>
+    </form>
+  </article>
 </MainLayout>
